@@ -1,0 +1,199 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+        <title>Student Info</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <header>
+            <a href="#" class="logo">Student Information</a>
+            <div class="mean-toggle"></div>
+            <nav>
+                <ul>
+                    <li><a href="#"><b>Home</b></a></li>
+                    <li><a href="#"><b>About</b></a></li>
+                    <li><a href="#"><b>Department</b></a></li>
+                    <li><a href="#"><b>Batch</b></a></li>
+                    <li><a href="#"><b>Resources</b></a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </header>
+    </head>
+    <body>
+        <div class="details">
+            <div class="block">
+                <label>Name</label>
+                <input id="Namebox" type="text">
+                <br><br>
+            </div>
+            <div class="block">
+                <label>Father's Name</label>
+                <input id="Fatherbox" type="text">
+                <br><br>
+            </div>
+            <div class="block">
+                <label>Mother's Name</label>
+                <input id="Motherbox" type="text">
+                <br><br>
+            </div>
+            <div class="block">
+                <label>Date of Birth</label>
+                <input id="Datebox" type="date">
+                <br><br>
+            </div>
+            <div class="block">
+                <label>Roll No.</label>
+                <input id="Rollbox" type="text">
+                <br><br>
+            </div>
+            <div class="block">
+                <label>Programme</label>
+                <input id="Programmebox" type="text" list="choices">
+                <datalist id="choices">
+                    <option value="B.Tech">
+                    <option value="M.Tech">
+                    <option value="MBA">
+                    <option value="PHD">
+                </datalist>
+                <br><br>
+            </div>
+            <div class="block">
+                <label>Branch</label>
+                <input id="Branchbox" type="text">
+                <br><br>
+            </div>
+            <div class="block">
+                <label>Batch</label>
+                <input id="Batchbox" type="text">
+                <br><br>
+            </div>
+            <div class="block">
+                <label>Present Address</label>
+                <input id="Presentbox" type="text">
+                <br><br>
+            </div>
+            <div class="block">
+                <label>Home Address</label>
+                <input id="Homebox" type="text">
+                <br><br>
+            </div>
+            <div class="block">
+                <label>Mobile Number</label>
+                <input id="Mobilebox" type="text">
+                <br><br>
+            </div>
+            <div class="block">
+                <label>Parent's Mobile Number</label>
+                <input id="Parentsbox" type="text">
+                <br><br>
+            </div>
+            <div class="block">
+                <label>Blood Group</label>
+                <input id="Bloodbox" type="text">
+                <br><br>
+            </div>
+            <div class="block">
+                <label>Allergies (if any)</label>
+                <input id="Allergiesbox" type="text">
+                <br><br>
+            </div>
+        <button id="Insbtn">Add</button>
+        <button id="Updbtn">Update</button>
+        <button id="Delbtn">Delete</button>
+        </div>
+        
+        <div class="find">
+            <div class="right">
+                <h2>Find Details by Roll Number</h2>
+            </div>
+        <label>Enter Roll Number</label>
+        <input id="findRoll" type="text"> <br><br>
+        <button id="Finbtn">FIND</button>
+        <div class="spawn">
+            <table class="contents">
+                <tr>
+                    <th class="t1"><b>Title</b></th>
+                    <th class="t1"><b>Details Filled</b></th>
+                </tr>
+                <tr>
+                    <td class="a">Name</td>
+                    <td id="findName" class="b"></td>
+                </tr>
+                <tr>
+                    <td class="a">Father's Name</td>
+                    <td id="findFather" class="b"></td>
+                </tr>
+                <tr>
+                    <td class="a">Mother's Name</td>
+                    <td id="findMother" class="b"></td>
+                </tr>
+                <tr>
+                    <td class="a">Date of Birth</td>
+                    <td id="findDob" class="b"></td>
+                </tr>
+                <tr>
+                    <td class="a">Roll Number</td>
+                    <td id="findRoll" class="b"></td>
+                </tr>
+                <tr>
+                    <td class="a">Programme</td>
+                    <td id="findProgramme" class="b"></td>
+                </tr>
+                <tr>
+                    <td class="a">Branch</td>
+                    <td id="findBranch" class="b"></td>
+                </tr>
+                <tr>
+                    <td class="a">Batch</td>
+                    <td id="findBatch" class="b"></td>
+                </tr>
+                <tr>
+                    <td class="a">Present Address</td>
+                    <td id="findPresent" class="b"></td>
+                </tr>
+                <tr>
+                    <td class="a">Home Address</td>
+                    <td id="findHome" class="b"></td>
+                </tr>
+                <tr>
+                    <td class="a">Mobile Number</td>
+                    <td id="findMobile" class="b"></td>
+                </tr>
+                <tr>
+                    <td class="a">Parent's Mobile Number</td>
+                    <td id="findParents" class="b"></td>
+                </tr>
+                <tr>
+                    <td class="a">Blood Group</td>
+                    <td id="findBlood" class="b"></td>
+                </tr>
+                <tr>
+                    <td class="a">Allergies (if any)</td>
+                    <td id="findAllergies" class="b"></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+
+        <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous">
+</script>
+  <script type="text/javascript">
+      $(document).ready(function()
+      {
+          $('.mean-toggle').click(function()
+        {
+              $('.mean-toggle').toggleClass('active')
+              $('nav').toggleClass('active')
+        })
+      })
+    </script>
+        <script type="module" src="script.js"></script>
+
+    </body>
+</html>
